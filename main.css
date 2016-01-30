@@ -1,0 +1,35 @@
+body, tr:nth-child(even), .form-control{
+    background-color: lightgrey;
+
+}
+h1{
+    margin-bottom: 0;
+}
+
+.panel{
+    padding: 5px;
+    border-width: 5px;
+}
+
+td:nth-child(1){
+    width: 125px;
+}
+
+.header{
+    border: 5px solid gray;
+    border-bottom: 0px;
+    padding: 10px;
+}
+
+.container{
+    background-color: white;
+    border: 5px solid lightgrey;
+    height: 375px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.btn-primary{
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
+}

@@ -32,6 +32,6 @@ $( document ).ready(function() {
 function loadTask(){
     $('tr').remove();
     main.tasks.forEach(function (task){
-        $('#taskTable tbody:last-child').append("<tr><td>" + task.name +"</td><td class'pull-left'>" + task.date +"</td><td>" + task.assigned +"</td></tr>");
+        $('#taskTable tbody:last-child').append("<tr><td>" + task.name +"</td><td class'pull-left'>" + task.date +"</td><td class'pull-right'>" + task.assigned +"</td></tr>");
     });
 };
