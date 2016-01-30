@@ -15,9 +15,23 @@ main.tasks = [
     new task("Test Task #7", "12/07/2012", "John Doe" )
 ];
 
+$('#submitButton').click(function(){
+    if($('#name').val().length > 0){
+        var date = new Date($('#date').val());
+        var formattedDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
+        main.tasks.push(new task($('#name').val(), formattedDate, $('#assigned').val() ));
+        loadTask()
+    }
+});
+
 
 $( document ).ready(function() {
+    loadTask()
+});
+
+function loadTask(){
+    $('tr').remove();
     main.tasks.forEach(function (task){
         $('#taskTable tbody:last-child').append("<tr><td>" + task.name +"</td><td class'pull-left'>" + task.date +"</td><td>" + task.assigned +"</td></tr>");
     });
-});
+};
