@@ -21,6 +21,9 @@ $('#submitButton').click(function(){
         var formattedDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
         main.tasks.push(new task($('#name').val(), formattedDate, $('#assigned').val() ));
         loadTask()
+        $('#name').val('');
+        $('#date').val('');
+        $('#assigned').val('');
     }
 });
 

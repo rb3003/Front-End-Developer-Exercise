@@ -9,6 +9,9 @@ h1{
 .panel{
     padding: 5px;
     border-width: 5px;
+    max-height: 305px;
+    overflow: auto;
+    margin-bottom: 0;
 }
 
 td:nth-child(1){
@@ -25,7 +28,6 @@ td:nth-child(1){
     background-color: white;
     border: 5px solid lightgrey;
     height: 375px;
-    overflow: auto;
     padding: 10px;
 }
 
